@@ -1,0 +1,36 @@
+{
+  "strategy_name": "保守起步型 ($100)",
+  "total_capital": 100,
+  "risk_level": "conservative",
+  
+  "entry_threshold": 20,
+  "exit_threshold": 40,
+  "max_position": 1.00,
+  "max_positions_total": 10,
+  
+  "locations": ["NYC", "London"],
+  "max_trades_per_run": 2,
+  
+  "safeguards": true,
+  "trend_detection": true,
+  "scan_interval": 300,
+  
+  "capital_allocation": {
+    "per_trade": 1.00,
+    "max_concurrent": 10.00,
+    "reserve": 30.00,
+    "gas_buffer": 5.00
+  },
+  
+  "daily_limits": {
+    "max_trades": 10,
+    "max_loss": 5.00,
+    "profit_target": 10.00
+  },
+  
+  "expected_returns": {
+    "monthly_roi_low": "10%",
+    "monthly_roi_high": "25%",
+    "monthly_profit_usd": "$10-25"
+  }
+}

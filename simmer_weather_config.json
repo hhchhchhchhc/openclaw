@@ -1,0 +1,17 @@
+{
+  "agent_name": "WeatherTrader",
+  "strategy": "conservative",
+  "entry_threshold": 15,
+  "exit_threshold": 45,
+  "max_position": 2.00,
+  "locations": ["NYC", "Chicago", "Seattle", "Atlanta", "Dallas", "Miami"],
+  "max_trades_per_run": 5,
+  "safeguards": true,
+  "trend_detection": true,
+  "scan_interval": 120,
+  "risk_management": {
+    "max_daily_loss": 10,
+    "max_positions": 10,
+    "stop_loss": 20
+  }
+}
