@@ -94,3 +94,35 @@ FileNotFoundError: [Errno 2] No such file or directory: '/home/user/.openclaw/wo
 Traceback (most recent call last):
   File "<stdin>", line 17, in <module>
 FileNotFoundError: [Errno 2] No such file or directory: '/home/user/.openclaw/workspace/douyin-auto/data/product_20260214_20_{i}.json'
+🤖 [2026-02-14 21:00:19] 开始自动选品...
+========================================
+🤖 抖音自动选品系统 - 全自动模式
+========================================
+
+🔍 正在抓取高佣商品...
+✅ 已抓取5个高佣商品
+🧠 智能筛选商品...
+✅ 智能筛选完成，选定3个商品
+  1. 硅胶保鲜盖套装 - 佣金45% - 评分22.25
+  2. 多功能厨房剪刀 - 佣金40% - 评分19.78
+  3. 便携折叠收纳箱 - 佣金35% - 评分17.41
+📝 生成商品详情...
+  ✅ 商品1: 硅胶保鲜盖套装
+  ✅ 商品2: 多功能厨房剪刀
+  ✅ 商品3: 便携折叠收纳箱
+
+✅ 自动选品完成！
+📦 已选定3个高佣商品
+📁 数据保存在: /home/user/.openclaw/workspace/douyin-auto/data/
+⏰ 下次选品: 1小时后
+========================================
+🚀 [2026-02-14 21:00:19] 开始自动上架...
+========================================
+🚀 抖店自动上架系统
+========================================
+
+📤 正在自动上架商品到抖店...
+📝 准备上架3个商品
+Traceback (most recent call last):
+  File "<stdin>", line 17, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: '/home/user/.openclaw/workspace/douyin-auto/data/product_20260214_21_{i}.json'
