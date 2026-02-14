@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>港美掘金 - 量化实战分享</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #eee;
+            line-height: 1.8;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #e94560;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            background: linear-gradient(45deg, #e94560, #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        
+        .meta {
+            color: #888;
+            font-size: 0.9em;
+        }
+        
+        .content {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(233, 69, 96, 0.2);
+        }
+        
+        .content h2 {
+            color: #e94560;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(233, 69, 96, 0.3);
+        }
+        
+        .content h3 {
+            color: #feca57;
+            font-size: 1.4em;
+            margin: 25px 0 15px;
+        }
+        
+        .content p {
+            margin-bottom: 15px;
+            color: #ddd;
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.2), rgba(233, 69, 96, 0.05));
+            border-left: 4px solid #e94560;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .code-block {
+            background: #0f0f23;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            overflow-x: auto;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9em;
+            color: #a8ff60;
+            border: 1px solid rgba(168, 255, 96, 0.2);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .stat-item {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid rgba(233, 69, 96, 0.2);
+        }
+        
+        .stat-value {
+            font-size: 2em;
+            color: #e94560;
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            color: #888;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        
+        .cta {
+            background: linear-gradient(135deg, #e94560, #ff6b6b);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .cta h3 {
+            color: white;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #e94560;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: transform 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        
+        .warning {
+            background: rgba(255, 193, 7, 0.1);
+            border: 1px solid rgba(255, 193, 7, 0.3);
+            border-radius: 10px;
+            padding: 15px 20px;
+            margin: 20px 0;
+            color: #ffc107;
+        }
+        
+        .warning::before {
+            content: "⚠️ ";
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .tag {
+            display: inline-block;
+            background: rgba(233, 69, 96, 0.2);
+            color: #e94560;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔥 港美掘金</h1>
+            <p class="meta">量化实战分享 | 内容营销系列</p>
+        </div>
+        
+        <!-- 这里插入具体内容 -->
+        <div class="content" id="main-content">
+            {{CONTENT}}
+        </div>
+        
+        <div class="footer">
+            <p>© 2026 港美掘金知识星球 | 量化投资实战社区</p>
+            <p>免责声明：本文内容仅供学习交流，不构成投资建议</p>
+        </div>
+    </div>
+</body>
+</html>
