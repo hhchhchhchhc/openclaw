@@ -3,35 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI新闻快报 · 2026年02月14日 18:00</title>
+    <title>赛博AI淘金 · 实时资讯</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
             min-height: 100vh;
-            color: #fff;
+            color: #e94560;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
             padding: 20px;
         }
-        .container { max-width: 800px; margin: 0 auto; }
         .header {
             text-align: center;
-            padding: 30px 0;
+            padding: 40px 0;
             border-bottom: 2px solid #e94560;
             margin-bottom: 30px;
         }
         .header h1 {
-            font-size: 2em;
-            background: linear-gradient(45deg, #e94560, #ff6b6b, #feca57);
+            font-size: 2.5em;
+            background: linear-gradient(45deg, #e94560, #ff6b6b);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 10px;
         }
-        .update-time {
+        .header .time {
             color: #888;
             font-size: 0.9em;
         }
-        .badge {
+        .update-badge {
             display: inline-block;
             background: #e94560;
             color: white;
@@ -45,140 +48,203 @@
             0%, 100% { opacity: 1; }
             50% { opacity: 0.7; }
         }
-        .section {
+        .card {
             background: rgba(255,255,255,0.05);
             backdrop-filter: blur(10px);
             border-radius: 15px;
             padding: 25px;
             margin-bottom: 20px;
-            border: 1px solid rgba(233, 69, 96, 0.2);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
-        .section-title {
-            font-size: 1.3em;
-            color: #e94560;
-            margin-bottom: 20px;
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.2);
+        }
+        .card-header {
             display: flex;
             align-items: center;
-            gap: 10px;
-        }
-        .news-item {
-            background: rgba(255,255,255,0.03);
-            border-radius: 10px;
-            padding: 15px;
             margin-bottom: 15px;
-            border-left: 3px solid #e94560;
-            transition: transform 0.2s;
         }
-        .news-item:hover {
-            transform: translateX(5px);
-            background: rgba(255,255,255,0.05);
+        .card-icon {
+            font-size: 2em;
+            margin-right: 15px;
         }
-        .news-title {
-            font-size: 1.1em;
+        .card-title {
+            font-size: 1.3em;
             color: #fff;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+        .tag {
+            background: rgba(233, 69, 96, 0.2);
+            color: #e94560;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+        }
+        .content {
+            color: #ccc;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        .highlight {
+            background: rgba(233, 69, 96, 0.1);
+            border-left: 3px solid #e94560;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .link-btn {
+            display: inline-block;
+            background: #e94560;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
             text-decoration: none;
-            display: block;
-            margin-bottom: 8px;
+            font-size: 0.9em;
+            transition: background 0.3s;
         }
-        .news-title:hover { color: #e94560; }
-        .news-meta {
-            color: #888;
-            font-size: 0.85em;
+        .link-btn:hover {
+            background: #ff6b6b;
         }
-        .heat { color: #feca57; }
         .footer {
             text-align: center;
-            padding: 30px;
+            padding: 40px 0;
             color: #666;
             font-size: 0.9em;
+        }
+        .money-tip {
+            background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(255,215,0,0.05));
+            border: 1px solid rgba(255,215,0,0.3);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 15px;
+        }
+        .money-tip h4 {
+            color: #ffd700;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>🔥 AI新闻快报</h1>
-            <div class="update-time">更新时间：2026年02月14日 18:00</div>
-            <span class="badge">⚡ 每6小时自动更新</span>
+            <h1>🤖 赛博AI淘金</h1>
+            <div class="time">实时资讯看板 · 2026-02-15 00:00:05</div>
+            <span class="update-badge">⚡ 每小时自动更新</span>
         </div>
 
-        <div class="section">
-            <div class="section-title">📰 HackerNews 热门</div>
 
-            <div class="news-item">
-                <a href="https://openai.com/index/new-result-theoretical-physics/" class="news-title" target="_blank">GPT-5.2 derives a new result in theoretical physics</a>
-                <div class="news-meta"><span class="heat">🔥 476 points</span> · ⏰ 14 hours ago</div>
+        <div class="card">
+            <div class="card-header">
+                <span class="card-icon">🔥</span>
+                <h3 class="card-title">HackerNews AI热门讨论</h3>
             </div>
-
-            <div class="news-item">
-                <a href="https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-2/" class="news-title" target="_blank">An AI Agent Published a Hit Piece on Me – More Things Have Happened</a>
-                <div class="news-meta"><span class="heat">🔥 424 points</span> · ⏰ 9 hours ago</div>
+            <div class="tags">
+                <span class="tag">社区热议</span>
+                <span class="tag">技术趋势</span>
             </div>
+            <div class="content">
+                <ul style="margin-left: 20px; color: #ccc; line-height: 2;">
 
-            <div class="news-item">
-                <a href="https://davidoks.blog/p/why-im-not-worried-about-ai-job-loss" class="news-title" target="_blank">I'm not worried about AI job loss</a>
-                <div class="news-meta"><span class="heat">🔥 261 points</span> · ⏰ 14 hours ago</div>
-            </div>
+<li><a href="" target="_blank" style="color: #e94560;">Common Lisp + Machine Learning Internship at Google (Mountain View, CA)</a> (45🔼)</li>
+<li><a href="" target="_blank" style="color: #e94560;">Ask HN: What's the pain using current AI algorithms?</a> (1🔼)</li>
+<li><a href="" target="_blank" style="color: #e94560;">MIT Non-AI License</a> (17🔼)</li>
 
-            <div class="news-item">
-                <a href="https://cloudrouter.dev/" class="news-title" target="_blank">Show HN: Skill that lets Claude Code/Codex spin up VMs and GPUs</a>
-                <div class="news-meta"><span class="heat">🔥 121 points</span> · ⏰ 14 hours ago</div>
-            </div>
-
-            <div class="news-item">
-                <a href="https://theconversation.com/openai-has-deleted-the-word-safely-from-its-mission-and-its-new-structure-is-a-test-for-whether-ai-serves-society-or-shareholders-274467" class="news-title" target="_blank">OpenAI has deleted the word 'safely' from its mission</a>
-                <div class="news-meta"><span class="heat">🔥 509 points</span> · ⏰ 11 hours ago</div>
-            </div>
-
-            <div class="news-item">
-                <a href="https://openai.com/index/introducing-gpt-5-3-codex-spark/" class="news-title" target="_blank">GPT‑5.3‑Codex‑Spark</a>
-                <div class="news-meta"><span class="heat">🔥 876 points</span> · ⏰ 1 day ago</div>
-            </div>
-
-            <div class="news-item">
-                <a href="https://www.moltis.org" class="news-title" target="_blank">Show HN: Moltis – AI assistant with memory, tools, and self-extending skills</a>
-                <div class="news-meta"><span class="heat">🔥 102 points</span> · ⏰ 15 hours ago</div>
-            </div>
-
-            <div class="news-item">
-                <a href="https://aredridel.dinhe.net/2026/02/12/the-ai-haters-guide-to-code-with-llms/" class="news-title" target="_blank">The AI hater's guide to code with LLMs</a>
-                <div class="news-meta"><span class="heat">🔥 22 points</span> · ⏰ 13 hours ago</div>
+                </ul>
             </div>
         </div>
 
-        <div class="section">
-            <div class="section-title">🚀 GitHub Trending AI项目</div>
 
-            <div class="news-item">
-                <a href="https://github.com/SynkraAI/aios-core" class="news-title" target="_blank">SynkraAI/aios-core - Synkra AIOS: AI-Orchestrated System for Full Stack Development - Core Framework v4.0</a>
-                <div class="news-meta"><span class="heat">⭐ 494 stars</span></div>
+        <div class="card">
+            <div class="card-header">
+                <span class="card-icon">🚀</span>
+                <h3 class="card-title">GitHub热门AI项目</h3>
+            </div>
+            <div class="tags">
+                <span class="tag">开源</span>
+                <span class="tag">GitHub Trending</span>
             </div>
 
-            <div class="news-item">
-                <a href="https://github.com/danielmiessler/Personal_AI_Infrastructure" class="news-title" target="_blank">danielmiessler/Personal_AI_Infrastructure - Agentic AI Infrastructure for magnifying HUMAN capabilities.</a>
-                <div class="news-meta"><span class="heat">⭐ 8,255 stars</span></div>
+
+            <div style="margin-bottom: 15px; padding: 10px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+                <strong style="color: #fff;">⭐ panbox</strong> <span style="color: #888;">(HTML · 8 stars)</span><br>
+                <p style="color: #aaa; margin-top: 5px;">盘盒子是专业的网盘资源盒子，提供海量免费AI资源（AI模型、AI资料、AI课程）、源码下载（前端、后端、移动端）、软件工具（Windows、Mac、手机APP、绿色软件）、学习课程（IT编程、设计创意、办公职场、副业创业）。每日更新优质资源！</p>
+                <a href="https://github.com/LoneKingCode/panbox" target="_blank" style="color: #e94560; font-size: 0.9em;">查看项目 →</a>
             </div>
 
-            <div class="news-item">
-                <a href="https://github.com/patchy631/ai-engineering-hub" class="news-title" target="_blank">patchy631/ai-engineering-hub - In-depth tutorials on LLMs, RAGs and real-world AI agent applications.</a>
-                <div class="news-meta"><span class="heat">⭐ 29,470 stars</span></div>
+
+            <div style="margin-bottom: 15px; padding: 10px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+                <strong style="color: #fff;">⭐ LerixAI</strong> <span style="color: #888;">(JavaScript · 0 stars)</span><br>
+                <p style="color: #aaa; margin-top: 5px;">🧠 Enhance your learning with LerixAI, an intelligent assistant designed to simplify complex subjects and boost your understanding efficiently.</p>
+                <a href="https://github.com/zeyadelhabak/LerixAI" target="_blank" style="color: #e94560; font-size: 0.9em;">查看项目 →</a>
             </div>
 
-            <div class="news-item">
-                <a href="https://github.com/cheahjs/free-llm-api-resources" class="news-title" target="_blank">cheahjs/free-llm-api-resources - A list of free LLM inference resources accessible via API.</a>
-                <div class="news-meta"><span class="heat">⭐ 10,848 stars</span></div>
+</div>
+
+        <div class="card">
+            <div class="card-header">
+                <span class="card-icon">🔍</span>
+                <h3 class="card-title">AI掘金最新情报</h3>
+            </div>
+            <div class="tags">
+                <span class="tag">实时搜索</span>
+                <span class="tag">变现机会</span>
             </div>
 
-            <div class="news-item">
-                <a href="https://github.com/THUDM/slime" class="news-title" target="_blank">THUDM/slime - slime is an LLM post-training framework for RL Scaling.</a>
-                <div class="news-meta"><span class="heat">⭐ 4,133 stars</span></div>
+
+            <div class="highlight" style="margin-bottom: 15px;">
+                <strong style="color: #fff;">稼げる 副業／案件を探すなら | 稼げる 副業なら | 【公式】マイナビ／スキイキ</strong>
+                <p style="color: #aaa; margin-top: 8px;">スキルで生きるフリーランス・副業・複業のスキルが活きる仕事探し。まずは会員登録を. 副業・複業・兼業の仕事探しサービス。会員登録・経歴登録で非公開求人が届くことも。</p>
+            </div>
+
+
+            <div class="highlight" style="margin-bottom: 15px;">
+                <strong style="color: #fff;">月入3万的ai副业攻略：从0到1入门的5个黄金赛道（附接单平台+避坑指南） - 知乎</strong>
+                <p style="color: #aaa; margin-top: 8px;">一、为什么说2025年是AI副业爆发元年？ 先看两组数据： - 中国信通院 《人工智能白皮书》显示，2024年国内AI相关产业规模突破5.2万亿元，年增长率达39%，催生超2000万新增岗位；</p>
+            </div>
+
+
+            <div class="highlight" style="margin-bottom: 15px;">
+                <strong style="color: #fff;">Fully Open Access | Submit AI Research | High Impact AI Journal</strong>
+                <p style="color: #aaa; margin-top: 8px;">Expand your reach: open access papers typically receive 3.5x views & 33% more citations. Welcoming artificial systems research that covers both theory and practice</p>
+            </div>
+
+</div>
+
+        <div class="card">
+            <div class="card-header">
+                <span class="card-icon">💡</span>
+                <h3 class="card-title">AI掘金Tips</h3>
+            </div>
+            <div class="tags">
+                <span class="tag">实操建议</span>
+                <span class="tag">赚钱思路</span>
+            </div>
+            <div class="money-tip">
+                <h4>🎯 本周重点关注</h4>
+                <ul style="margin-left: 20px; margin-top: 10px; line-height: 1.8;">
+                    <li><strong>AI视频生成</strong>：Pika、Runway、HeyGen 竞争白热化，关注新功能发布窗口期</li>
+                    <li><strong>AI编程助手</strong>：Cursor 融资 1.05 亿美元，插件生态是下一个爆发点</li>
+                    <li><strong>AI Agent</strong>：Manus 爆火证明市场饥渴，垂直场景 Agent 有机会</li>
+                    <li><strong>AI数字人</strong>：短视频平台算法开始推AI内容，流量红利期</li>
+                </ul>
+            </div>
+            <div style="margin-top: 15px; padding: 15px; background: rgba(233, 69, 96, 0.1); border-radius: 8px;">
+                <strong style="color: #e94560;">💰 变现公式：</strong><br>
+                <span style="color: #ccc;">新工具首发(流量) + 教程/模板(产品) + 社群/课程(转化) = 持续收入</span>
             </div>
         </div>
 
         <div class="footer">
-            <p>💡 掘金提示：关注热门项目的早期趋势，第一时间跟进可获得流量红利</p>
-            <p>🔄 数据来源：HackerNews + GitHub Trending</p>
-            <p>🤖 自动更新：每6小时</p>
+            <p>本页面由AI自动生成 · 每小时更新</p>
+            <p>数据来源：GitHub Trending / Hacker News / Product Hunt / AI社区</p>
+            <p>💎 关注本仓库获取最新AI掘金情报</p>
         </div>
     </div>
 </body>
