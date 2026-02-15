@@ -1,0 +1,70 @@
+{
+  "fetch_time": "2026-02-16 00:00:21",
+  "products": [
+    {
+      "id": "P20260216_0001",
+      "name": "便携折叠收纳箱",
+      "category": "家居收纳",
+      "price": 29.9,
+      "commission_rate": 35,
+      "commission_amount": 10.47,
+      "sales": 15000,
+      "rating": 4.8,
+      "supplier": "厂家直发",
+      "image_url": "https://example.com/img1.jpg",
+      "reason": "高佣金+高销量"
+    },
+    {
+      "id": "P20260216_0002", 
+      "name": "多功能厨房剪刀",
+      "category": "厨房用具",
+      "price": 19.9,
+      "commission_rate": 40,
+      "commission_amount": 7.96,
+      "sales": 28000,
+      "rating": 4.7,
+      "supplier": "品牌旗舰店",
+      "image_url": "https://example.com/img2.jpg",
+      "reason": "超高佣金率"
+    },
+    {
+      "id": "P20260216_0003",
+      "name": "魔术拖把免手洗",
+      "category": "清洁工具",
+      "price": 39.9,
+      "commission_rate": 30,
+      "commission_amount": 11.97,
+      "sales": 32000,
+      "rating": 4.6,
+      "supplier": "源头工厂",
+      "image_url": "https://example.com/img3.jpg",
+      "reason": "爆款潜力"
+    },
+    {
+      "id": "P20260216_0004",
+      "name": "便携榨汁杯",
+      "category": "小家电",
+      "price": 59.9,
+      "commission_rate": 25,
+      "commission_amount": 14.98,
+      "sales": 8500,
+      "rating": 4.9,
+      "supplier": "品牌授权",
+      "image_url": "https://example.com/img4.jpg",
+      "reason": "高客单价"
+    },
+    {
+      "id": "P20260216_0005",
+      "name": "硅胶保鲜盖套装",
+      "category": "厨房收纳",
+      "price": 15.9,
+      "commission_rate": 45,
+      "commission_amount": 7.16,
+      "sales": 45000,
+      "rating": 4.5,
+      "supplier": "厂家直发",
+      "image_url": "https://example.com/img5.jpg",
+      "reason": "极致性价比"
+    }
+  ]
+}
